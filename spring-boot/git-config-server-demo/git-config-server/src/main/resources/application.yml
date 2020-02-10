@@ -1,0 +1,7 @@
+server:
+  port: 8080  servlet:
+    context-path: /config-server
+spring:  cloud:    config:      server:        git:          uri: https://github.com/thotaanil19/cloud-config-properties
+          #username: thotaanil19
+          #password: Lakehead@123
+          search-paths:          - 'app*'

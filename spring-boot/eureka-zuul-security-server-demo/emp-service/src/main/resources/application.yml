@@ -1,0 +1,16 @@
+spring:
+       application:
+                  name: emp-service
+eureka:
+      client:
+            register-with-eureka: true
+            fetch-registry: true
+            serviceUrl:
+                      defaultZone: http://localhost:8080/zuul-gateway/eureka/
+instance:
+      hostname: localhost
+
+server:
+      servlet:
+             context-path: /service1
+      port: 8081

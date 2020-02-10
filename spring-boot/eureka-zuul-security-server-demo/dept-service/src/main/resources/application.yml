@@ -1,0 +1,16 @@
+spring:
+       application:
+                  name: dept-service
+eureka:
+      client:
+            register-with-eureka: true
+            fetch-registry: true
+            serviceUrl:
+                      defaultZone: http://localhost:8080/zuul-gateway/eureka/
+instance:
+      hostname: localhost
+
+server:
+      servlet:
+             context-path: /dept-service
+      port: 8082
